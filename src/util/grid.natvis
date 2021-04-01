@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  <Type Name="util::grid&lt;*&gt;">
+    <DisplayString>width={_width} height={_height}</DisplayString>
+    <Expand>
+      <ArrayItems>
+        <Direction>Backward</Direction>
+        <Rank>2</Rank>
+        <Size>$i == 0 ? _width : _height</Size>
+        <ValuePointer>elements</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+</AutoVisualizer>
